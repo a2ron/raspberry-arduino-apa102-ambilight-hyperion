@@ -1,4 +1,5 @@
 # Installing a newer GCC Version
+set -e
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install gcc-4.9 g++-4.9
@@ -10,11 +11,7 @@ sudo update-alternatives --config gcc
 sudo apt-get -y update
 # Install additional dependencies
 sudo apt-get install -y cmake libssl-dev
+sudo apt-get -y install git
 # Starting with the platform
+rm -rf Linux-Client
 git clone https://github.com/thinger-io/Linux-Client.git
-cd Linux-Client
-# Installing the client as daemon
-cd install/raspberry/
-chmod +x install.sh
-./install.sh 
-sudo service thinger start

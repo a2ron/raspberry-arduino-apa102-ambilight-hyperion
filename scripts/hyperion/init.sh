@@ -5,6 +5,6 @@ if [ "$1" == "start" ]; then
     sleep 3
 else
     sleep 15
+    hyperion-remote -L 70
+    hyperion-remote -e Candle
 fi
-hyperion-remote -m 0.7
-echo "--------------------------------------"

@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo apt-get install screen
-
-
-
+set -e
+sudo apt-get -y update
+sudo apt-get install -y screen
