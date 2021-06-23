@@ -6,5 +6,5 @@ if [ "$1" == "start" ]; then
 else
     sleep 15
     hyperion-remote -L 70
-    hyperion-remote -e Candle
+    hyperion-remote -e "Full color mood blobs"
 fi
